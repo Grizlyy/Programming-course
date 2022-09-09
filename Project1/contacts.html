@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Super gym</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    .menu-center {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <h1 class="header center red-text text-darken-2">“All progress takes place outside the comfort zone.”</h1>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1 "></div>
+  </div>
+  <div>
+    <nav style="background-color: black">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class=" hide-on-med-and-down menu-center">
+          <li><a href="index.html" style="color: red">Home</a></li>
+          <li><a href="our_trainers.html" style="color: red">Our trainers</a></li>
+          <li><a href="gallery.html" style="color: red">Gallery</a></li>
+          <li><a href="contacts.html" style="color: red">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html" style="color: red">Home</a></li>
+      <li><a href="our_trainers.html" style="color: red">Our trainers</a></li>
+      <li><a href="gallery.html" style="color: red">Gallery</a></li>
+      <li><a href="contacts.html" style="color: red">Contacts</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6615.769789635202!2d-118.4780506652164!3d33.99549020618949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bacf5bafe507%3A0x1feecab4aee51758!2s360%20Hampton%20Dr%2C%20Venice%2C%20CA%2090291%2C%20USA!5e0!3m2!1sen!2slt!4v1598032612752!5m2!1sen!2slt"
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
+    <div class="col s12 m4">
+      <form>
+        <div class="input-field col s12">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+        <button class="btn red" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+
+      </form>
+    </div>
+    <div class="col s12 m4">
+      <h3>Find us</h3>
+        <address>
+            <p>360 Hampton Dr, Venice, CA 90291, United States</p>
+        </address>
+      <ul style="list-style: none;">
+
+        <li><a href="index.html">www.supergym.com</a></li>
+        <li>tel: +13103926004</li>
+        <li>email: information@supergym.com</li>
+        <li>business hours:</li>
+        <li>I–V 6.00 – 23.00</li>
+        <li>VI 10.00 – 20.00</li>
+        <li>VII 10.00 – 18.00</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <footer class="page-footer black">
+
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="#c62828 red-text text-darken-3">Grizlyy</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems,{});
+  });</script>
+  </body>
+</html>
